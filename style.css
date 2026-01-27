@@ -1,0 +1,32 @@
+@font-face{
+    font-family: "opensans";
+    src: url("fonts/OpenSans-Regular.ttf")
+}
+
+body{
+    font-family: "opensans", sans-serif;
+}
+
+.intro h1{
+    font-size:16px;
+}
+
+.intro h2{
+    font-size:12px;
+}
+
+.intro{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    margin: 25px;
+}
+
+.image-grid{
+    margin-left: 350px;    
+    display:gird;
+    grid-template-columns: repear(2,1fr);
+    gap: 100px;
+}
