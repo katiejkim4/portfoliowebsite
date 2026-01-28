@@ -6,6 +6,7 @@
 body{
     font-family: "opensans", sans-serif;
     margin: 0;
+    margin-bottom: 100px;
 }
 
 .intro h1{
@@ -37,11 +38,11 @@ body{
 
 .image-grid{
     margin: 50px;
-    margin-left: 350px;  
-    margin-right: 150px;  
+    margin-left: 360px;  
+    margin-right: 160px;  
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    column-gap: 15px;
+    column-gap: 20px;
     row-gap: 40px;
 }
 
