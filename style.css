@@ -9,6 +9,14 @@ body{
     margin-bottom: 100px;
 }
 
+a{
+    color:black
+}
+
+.intro h1 a {
+    text-decoration: none;
+}
+
 .intro h1{
     font-size:20px;
 }
@@ -23,7 +31,7 @@ body{
     top: 0;
     width: 250px;
     height: 100vh;
-    padding: 50px;
+    padding: 40px;
 }
 
 .content h2{
@@ -37,12 +45,12 @@ body{
 }
 
 .image-grid{
-    margin: 50px;
-    margin-left: 360px;  
-    margin-right: 160px;  
+    margin: 100px;
+    margin-left: 330px;  
+    margin-right: 130px;  
     display:grid;
     grid-template-columns: repeat(2,1fr);
-    column-gap: 20px;
+    column-gap: 15px;
     row-gap: 40px;
 }
 
@@ -54,18 +62,20 @@ body{
     margin-bottom: 25px;
 }
 
-
+.nav h1 a {
+    text-decoration: none;
+}
 .nav h1{
     font-size:20px;
 }
+
 .nav {
     position: fixed;
     right: 0;
     top: 0;
     width: 50px;
     height: 100vh;
-    padding: 50px;
-
+    padding: 40px;
 }
 
 .bottom-gradient { /*with claudeai*/
