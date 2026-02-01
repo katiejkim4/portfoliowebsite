@@ -14,6 +14,18 @@ a{
     color: black
 }
 
+.intro{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .intro h1 a {
     text-decoration: none;
 }
@@ -24,15 +36,6 @@ a{
 
 .intro p{
     font-size:12.5px;
-}
-
-.intro{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 250px;
-    height: 100vh;
-    padding: 40px;
 }
 
 .content h2{
