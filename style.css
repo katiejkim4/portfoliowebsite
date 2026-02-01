@@ -18,9 +18,9 @@ a{
     position: fixed;
     left: 0;
     top: 0;
-    width: 250px;
+    width: 240px;
     height: 100vh;
-    padding: 40px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,7 +41,7 @@ a{
 
 .intro-bottom {
     margin-top: auto;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 .content h2{
@@ -57,8 +57,8 @@ a{
 
 .image-grid{
     margin: 100px;
-    margin-left: 330px;  
-    margin-right: 130px;  
+    margin-left: 340px;  
+    margin-right: 150px;  
     display:grid;
     grid-template-columns: repeat(2,1fr);
     column-gap: 15px;
@@ -87,7 +87,7 @@ a{
     background-color: rgba(255, 255, 255, 0.15); /* White at 20% opacity */
     border-radius: 10px;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease;
     pointer-events: none;
 }
 
@@ -108,7 +108,7 @@ a{
     top: 0;
     width: 50px;
     height: 100vh;
-    padding: 40px;
+    padding: 50px;
 }
 
 .bottom-gradient { /*with claudeai*/
@@ -120,4 +120,32 @@ a{
     background: linear-gradient(to top, white, transparent);
     pointer-events: none; /* Allows clicking through the gradient */
     z-index: 10; /* Ensures it appears on top */
+}
+
+.project-info{
+    margin: 100px;
+    margin-left: 340px;  
+    margin-right: 150px;  
+}
+
+.project-info img{
+    width:100%;
+    height:auto;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.project-info h2{
+    font-size:20px;
+}
+
+.project-info p{
+    font-size:12.5px;
+}
+
+.info1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    gap: 50px; 
 }
