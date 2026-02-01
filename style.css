@@ -7,7 +7,7 @@ body{
     font-family: "opensans", sans-serif;
     margin: 0;
     margin-bottom: 100px;
-    color: black
+    color: black;
 }
 
 a{
@@ -24,6 +24,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 20;
 }
 
 .intro h1 a {
@@ -36,6 +37,11 @@ a{
 
 .intro p{
     font-size:12.5px;
+}
+
+.intro-bottom {
+    margin-top: auto;
+    margin-bottom: 60px;
 }
 
 .content h2{
