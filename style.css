@@ -65,12 +65,34 @@ a{
     row-gap: 40px;
 }
 
-.image-grid img{ /*with claudeai*/
+.image-grid img{
     width:100%;
     height:auto;
     display: block;
     border-radius: 10px;
     margin-bottom: 25px;
+}
+
+.image-grid > div { /*with claudeai*/
+    position: relative;
+}
+
+.image-grid > div::before { /*with claudeai*/
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 25px); /* Accounts for image margin-bottom */
+    background-color: rgba(255, 255, 255, 0.15); /* White at 20% opacity */
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.image-grid > div:hover::before { /*with claudeai*/
+    opacity: 1;
 }
 
 .nav h1 a {
