@@ -46,10 +46,12 @@ a{
 
 .content h2{
     font-size:12.5px;
+    margin-bottom: 5px;
 }
 
 .content p{
     font-size:12.5px;
+    margin-top: 0px;
     color: grey;
 }
 
@@ -161,12 +163,12 @@ a{
 .two-image {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    column-gap: 15px; 
+    column-gap: 10px; 
 }
 
 .photo-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 15px;
-    row-gap: 15px;
+    column-gap: 10px;
+    row-gap: 10px;
 }
