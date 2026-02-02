@@ -46,17 +46,19 @@ a{
 
 .content h2{
     font-size:12.5px;
-    line-height: .6;
 }
 
 .content p{
     font-size:12.5px;
-    line-height: .6;
     color: grey;
 }
 
+.content a{
+    text-decoration: none;
+}
+
 .image-grid{
-    margin: 100px;
+    margin: 110px;
     margin-left: 340px;  
     margin-right: 150px;  
     display:grid;
@@ -70,7 +72,7 @@ a{
     height:auto;
     display: block;
     border-radius: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .image-grid > div { /*with claudeai*/
@@ -144,8 +146,24 @@ a{
     font-size:12.5px;
 }
 
-.info1 {
+.two-text-image {
     display: grid;
-    grid-template-columns: 1fr 3fr; 
+    grid-template-columns: 1fr 2fr; 
     gap: 50px; 
+}
+
+.two-text-image img{
+    margin-top: 20px;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: .5px;
+    background-color: black;
+}
+
+.two-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px; 
 }
