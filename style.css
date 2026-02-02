@@ -87,7 +87,7 @@ a{
     left: 0;
     width: 100%;
     height: calc(100% - 25px); /* Accounts for image margin-bottom */
-    background-color: rgba(255, 255, 255, 0.2); /* White at 20% opacity */
+    background-color: rgba(255, 255, 255, 0.25); /* White at 20% opacity */
     border-radius: 10px;
     opacity: 0;
     transition: opacity 0.3s ease;
