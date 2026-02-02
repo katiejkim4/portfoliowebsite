@@ -86,10 +86,10 @@ a{
     left: 0;
     width: 100%;
     height: calc(100% - 25px); /* Accounts for image margin-bottom */
-    background-color: rgba(255, 255, 255, 0.15); /* White at 20% opacity */
+    background-color: rgba(255, 255, 255, 0.2); /* White at 20% opacity */
     border-radius: 10px;
     opacity: 0;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.3s ease;
     pointer-events: none;
 }
 
@@ -135,7 +135,6 @@ a{
     height:auto;
     display: block;
     border-radius: 10px;
-    margin-bottom: 25px;
 }
 
 .project-info h2{
@@ -152,18 +151,22 @@ a{
     gap: 50px; 
 }
 
-.two-text-image img{
-    margin-top: 20px;
-}
-
 .horizontal-line {
     width: 100%;
     height: .5px;
     background-color: black;
+    margin: 20px 0;
 }
 
 .two-image {
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    gap: 15px; 
+    column-gap: 15px; 
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
 }
