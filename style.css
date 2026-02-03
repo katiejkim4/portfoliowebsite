@@ -7,7 +7,32 @@ body{
     font-family: "opensans", sans-serif;
     margin: 0;
     margin-bottom: 100px;
+    margin-top: 65px;
     color: black;
+}
+
+@media (min-width:901px){
+    .mobile-view { opacity: 0; }
+    .container{ opacity: 1; }
+}
+
+@media (max-width:900px){
+    body {
+        background-color: white;
+    }
+    .mobile-view { opacity: 1; }
+    .container{ opacity: 0; }
+}
+
+.mobile-view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mobile-view p,span {
+    font-size: 16x;
+    text-align: center;
 }
 
 a{
@@ -45,7 +70,7 @@ a{
 }
 
 .content h2{
-    font-size:12.5px;
+    font-size: 14px;
     margin-bottom: 5px;
 }
 
@@ -59,7 +84,6 @@ a{
 }
 
 .image-grid{
-    margin: 110px;
     margin-left: 340px;  
     margin-right: 150px;  
     display:grid;
@@ -126,7 +150,6 @@ a{
 }
 
 .project-info{
-    margin: 100px;
     margin-left: 340px;  
     margin-right: 150px;  
 }
@@ -139,6 +162,10 @@ a{
 }
 
 .project-info h2{
+    font-size:14px;
+}
+
+.project-intro h2{
     font-size:20px;
 }
 
