@@ -23,12 +23,13 @@
                 <h1><a href="index.html">KAITLYN J. KIM</a></h1>
                 <p>Industrial Design + Sustainability Studies @ the <a href="https://www.risd.edu/"
                         target="_blank">Rhode Island School of Design</a></p>
-                <p>Previously @ <a href="https://www.hyundai.com/worldwide/en/brand-journal/sustainable-vision/risdxhyundai"
+                <p>Previously @ <a
+                        href="https://www.hyundai.com/worldwide/en/brand-journal/sustainable-vision/risdxhyundai"
                         target="_blank">HyundaixRISD ↗</a></p>
             </div>
 
             <div class="intro-bottom">
-                <div class="animated-text" id="text">I hand-coded this website</div>
+                <div class="animated-text" id="text">( 〰 ) I hand-coded this website</div>
             </div>
         </div>
 
@@ -49,28 +50,20 @@
                     <p>R&D for future mobility innovation - details upon request</p>
                 </div>
 
+                <div class="stewps">
+                    <a href="stewps.html">
+                        <img src="images/stewps.gif">
+                    </a>
+                    <h2><a href="stewps.html">STEWPS</a></h2>
+                    <p>Community-based interactive installation</p>
+                </div>
+
                 <div class="sculpie">
                     <a href="sculpie.html">
                         <img src="images/sculpie.jpg">
                     </a>
                     <h2><a href="sculpie.html">SCULPIE</a></h2>
                     <p>Tools for Art Therapy</p>
-                </div>
-
-                <div class="melonbag">
-                    <a href="melonbag.html">
-                        <img src="images/sample.png">
-                    </a>
-                    <h2><a href="melonbag.html">MELON BAG</a></h2>
-                    <p>Giving old materials a second life</p>
-                </div>
-
-                <div class="stewps">
-                    <a href="stewps.html">
-                        <img src="images/stewps.png">
-                    </a>
-                    <h2><a href="stewps.html">STEWPS</a></h2>
-                    <p>Community-based interactive installation</p>
                 </div>
 
                 <div class="betterworld">
@@ -91,35 +84,34 @@
         <div class="bottom-gradient"></div>
 
     </div>
-    </div>
 
     <script>
 
-const textElement = document.getElementById('text');
+        const textElement = document.getElementById('text');
 
-const messages = [
-    "I hand-coded this website",
-    "I am a ENFJ",
-    "I am a crunchy green grape enthusiast",
-    "I am currently learning to crochet",
-];
+        const messages = [
+            "( 〰 ) I hand-coded this website",
+            "( •ᴗ• ) I am an ENFJ",
+            "( ♡ ) I am a green grape enthusiast",
+            "( ✄ ) I am currently learning how to knit",
+        ];
 
-let currentIndex = 0;
+        let currentIndex = 0;
 
-function changeText() {
-    textElement.classList.remove('fade-in');  // Remove fade-in first
-    textElement.classList.add('fade-out');
-    
-    setTimeout(() => {
-        currentIndex = (currentIndex + 1) % messages.length;
-        textElement.textContent = messages[currentIndex];
-        textElement.classList.remove('fade-out');
-        textElement.classList.add('fade-in');
-    }, 1000);
-}
+        function changeText() {
+            textElement.classList.remove('fade-in');  // Remove fade-in first
+            textElement.classList.add('fade-out');
 
-setInterval(changeText, 3500);
-    
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % messages.length;
+                textElement.textContent = messages[currentIndex];
+                textElement.classList.remove('fade-out');
+                textElement.classList.add('fade-in');
+            }, 1000);
+        }
+
+        setInterval(changeText, 3500);
+
     </script>
 </body>
 
