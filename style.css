@@ -247,6 +247,11 @@ a{
     row-gap: 10px;
 }
 
+.photo-grid span {
+    size: 20px;
+    color: rgb(155, 155, 155);
+}
+
 .two-three {
     display: grid;
     grid-template-columns: 1fr 1fr; 
