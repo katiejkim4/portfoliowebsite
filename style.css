@@ -98,6 +98,37 @@ a{
     opacity: 1;
 }
 
+/* Status Badge */
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0px;
+}
+
+.status-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #000000;
+    animation: fadeInOut 3s ease-in-out infinite;
+    flex-shrink: 0;
+}
+
+.status-text {
+    font-size: 12.5px;
+    color: black;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
 /* ========================================
    NAVIGATION
    ======================================== */
