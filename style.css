@@ -316,7 +316,7 @@ a{
    ======================================== */
 .block_1 {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: auto 1fr;
     column-gap: 50px;
     row-gap: 10px;
@@ -324,7 +324,7 @@ a{
 }
 
 .full {
-    grid-column: 1 / 7; /* All 4 columns */
+    grid-column: 1 / 8; /* All 4 columns */
 }
 
 .first {
@@ -332,7 +332,7 @@ a{
 }
 
 .second {
-    grid-column: 2 / 7;
+    grid-column: 2 / 8;
 }
 
 /* ========================================
