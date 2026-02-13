@@ -312,6 +312,30 @@ a{
 }
 
 /* ========================================
+   GRID LAYOUT SYSTEM
+   ======================================== */
+.block_1 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto 1fr;
+    column-gap: 50px;
+    row-gap: 10px;
+    margin-bottom: 80px;
+}
+
+.full {
+    grid-column: 1 / 7; /* All 4 columns */
+}
+
+.first {
+    grid-column: 1 / 2;
+}
+
+.second {
+    grid-column: 2 / 7;
+}
+
+/* ========================================
    GALLERY
    ======================================== */
 .gallery {
