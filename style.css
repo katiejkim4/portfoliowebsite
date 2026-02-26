@@ -26,16 +26,16 @@ a{
    ======================================== */
 
 @media (min-width:1101px){
-    .mobile-view { opacity: 0; }
-    .container{ opacity: 1; }
+    .mobile-view { display: none; }
+    .container { display: block; }
 }
 
 @media (max-width:1100px){
     body {
         background-color: white;
     }
-    .mobile-view { opacity: 1; }
-    .container{ opacity: 0; }
+    .mobile-view { display: block; }
+    .container { display: none; }
 }
 
 .mobile-view {
