@@ -18,15 +18,25 @@
     <div class="intro">
 
     <div class="intro-top">
-<h1><a href="index.html">KAITLYN J. KIM</a></h1>
-<p>Industrial Design + Sustainability Studies @ the <a href="https://www.risd.edu/" target="_blank">Rhode Island School of Design</a></p>   
-<p>Previously @ <a href="https://www.hyundai.com/worldwide/en/brand-journal/sustainable-vision/risdxhyundai"
+                <h1><a href="index.html">KAITLYN J. KIM</a></h1>
+                <p>Industrial Design + Sustainability Studies @ the <a href="https://www.risd.edu/"
+                        target="_blank">Rhode Island School of Design</a></p>
+
+                <p>Previously @ <a
+                        href="https://www.hyundai.news/eu/articles/press-releases/hyundai-and-risd-continue-partnership.html"
                         target="_blank">HyundaixRISD ↗</a></p>
-                        <div class="status-badge">
+
+                <div class="status-badge">
                     <div class="status-circle"></div>
                     <div class="status-text">Open + Happy to Work</div>
                 </div>
-    </div>
+            </div>
+
+            <div class="intro-bottom">
+                <div class="animated-text" id="text">This website is hand-coded</div>
+            </div>
+
+    
 
     </div>
     <div class="project-info">
@@ -52,5 +62,32 @@
             <h1><a href="info.html">INFO</a></h1>
     </div>  
 </div>
+
+<script>
+
+        const textElement = document.getElementById('text');
+
+        const messages = [
+            "This website is hand coded with love",
+            "This website was last updated Feb, 2025",
+        ];
+
+        let currentIndex = 0;
+
+        function changeText() {
+            textElement.classList.remove('fade-in');  // Remove fade-in first
+            textElement.classList.add('fade-out');
+
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % messages.length;
+                textElement.textContent = messages[currentIndex];
+                textElement.classList.remove('fade-out');
+                textElement.classList.add('fade-in');
+            }, 1000);
+        }
+
+        setInterval(changeText, 3000);
+
+    </script>
 </body>
 </html>

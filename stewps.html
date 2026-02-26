@@ -21,15 +21,25 @@
 
         <!-- ========== SITE HEADER ========== -->
         <div class="intro">
-            <div class="intro-top">
+<div class="intro-top">
                 <h1><a href="index.html">KAITLYN J. KIM</a></h1>
-                <p>Industrial Design + Sustainability Studies @ the <a href="https://www.risd.edu/" target="_blank">Rhode Island School of Design</a></p>
-                <p>Previously @ <a href="https://www.hyundai.com/worldwide/en/brand-journal/sustainable-vision/risdxhyundai" target="_blank">HyundaixRISD ↗</a></p>
+                <p>Industrial Design + Sustainability Studies @ the <a href="https://www.risd.edu/"
+                        target="_blank">Rhode Island School of Design</a></p>
+
+                <p>Previously @ <a
+                        href="https://www.hyundai.news/eu/articles/press-releases/hyundai-and-risd-continue-partnership.html"
+                        target="_blank">HyundaixRISD ↗</a></p>
+
                 <div class="status-badge">
                     <div class="status-circle"></div>
                     <div class="status-text">Open + Happy to Work</div>
                 </div>
             </div>
+
+            <div class="intro-bottom">
+                <div class="animated-text" id="text">This website is hand-coded</div>
+            </div>
+
         </div>
         
         <!-- ========== PROJECT CONTENT ========== -->
@@ -45,31 +55,24 @@
 
                     <!-- Project Title & Metadata -->
                     <div class="block">
-                        <div class="title">
-                            <h2>STEWPS</h2>
-                        </div>
-
-                        <div class="info">
-                            <div class="horizontal-line"></div>
-                            <span>YEAR</span>
-                            <p>2025</p>
-
-                            <div class="horizontal-line"></div>
-                            <span>SKILLS</span>
-                            <p>Spatial Design, Large-Scale Fabrication, Community Research/Outreach</p>
-
-                            <div class="horizontal-line"></div>
-                            <span>ACKNOWLEDGMENTS</span>
-                            <p>Thank you to <a href="https://www.risd.edu/academics/industrial-design/faculty/jessica-brown"target="_blank">Jessica Brown</a> for overseeing and facilitating this project + to my studio mates Christian Buckendorf, Diya Matthew, Jenna Jean-Barnard, Jenny Kim, Mekala Kumar</p>
-                        </div>
-
-                        <div class="description">
-                            <div class="horizontal-line"></div>
-                            <span>DESCRIPTION</span>
-                            <p>STEWP is about creating a gathering space where none existed before. Iconic in cities like New York, Chicago, and Philly—Stoop fronts are more than a means to enter and exit a home. They’re meeting places for the neighborhood, especially within communities of color.  These are places where neighbors talk and greet one another, elders share stories, kids play, hair gets braided, small businesses thrive, food is shared and secrets are told. Stoops are where community naturally forms. At this moment in time, as people grow more isolated and separated, STEWP becomes a necessary public engagement intervention—an invitation to come together, put your phone down (after you take a picture and read this). sit side by side- face to face, talk, listen, share...and simply coexist.  We hope you enjoy.</p>
-                        </div>
+                    <div class="title">
+                        <span>FALL 2025 • COMMUNITY-BASED INTERACTIVE INSTALLATION</span>
+                        <h2>STEWPS</h2>
                     </div>
 
+                </div>
+
+                <div class="block_1">
+                    <div class="horizontal-line full"></div>
+                    <div class="title first">
+                        <h3>OVERVIEW</h3>
+                    </div>
+
+                    <div class="info second">
+			        <span>OPENING A SPACE FOR CONVERSATION</span>
+                        <p>STEWP is about creating a gathering space where none existed before. Iconic in cities like New York, Chicago, and Philly—Stoop fronts are more than a means to enter and exit a home. They’re meeting places for the neighborhood, especially within communities of color.  These are places where neighbors talk and greet one another, elders share stories, kids play, hair gets braided, small businesses thrive, food is shared and secrets are told. Stoops are where community naturally forms. At this moment in time, as people grow more isolated and separated, STEWP becomes a necessary public engagement intervention—an invitation to come together, put your phone down (after you take a picture and read this). sit side by side- face to face, talk, listen, share...and simply coexist.  We hope you enjoy.</p>
+                    </div>
+                </div>
                     <!-- Image Gallery -->
                     <div class="gallery">
                         <img src="stewps/1.jpg"> 
@@ -77,6 +80,7 @@
                         <img src="stewps/4.jpg"> 
                     </div>
 
+                    
                     <!-- ========== SECTION 01: IDEATE ========== -->
                     <div class="block_1">
                         <div class="horizontal-line full"></div>
@@ -85,6 +89,7 @@
                         </div>
 
                         <div class="info second">
+                            <span>DRILLING, DRILLING, AND MORE DRILLING</span>
                             <p>We were able to fabricate three STEWPS steps, each measuring 9 × 9 feet. This was my first time working on a large-scale fabrication project, and it was extremely rewarding. Through this experience, I learned the importance of community in conducting projects—not only did our studio participate, but the open studios we hosted also engaged the broader Providence community in our building process. Below is a small look into what a day in the studio looked like!</p>
                         </div>
 
@@ -105,6 +110,32 @@
         </div>
 
     </div>
+    <script>
+
+        const textElement = document.getElementById('text');
+
+        const messages = [
+            "This website is hand coded with love",
+            "This website was last updated Feb, 2025",
+        ];
+
+        let currentIndex = 0;
+
+        function changeText() {
+            textElement.classList.remove('fade-in');  // Remove fade-in first
+            textElement.classList.add('fade-out');
+
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % messages.length;
+                textElement.textContent = messages[currentIndex];
+                textElement.classList.remove('fade-out');
+                textElement.classList.add('fade-in');
+            }, 1000);
+        }
+
+        setInterval(changeText, 3000);
+
+    </script>
 </body>
 
 </html>
