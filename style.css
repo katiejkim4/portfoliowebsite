@@ -1,9 +1,9 @@
 /* ========================================
    FONTS
    ======================================== */
-@font-face{
+@font-face {
     font-family: "opensans";
-    src: url("fonts/OpenSans-Regular.ttf")
+    src: url("fonts/OpenSans-Regular.ttf");
 }
 
 /* ========================================
@@ -301,20 +301,8 @@ a{
     grid-column: 3 / 5; /* 2 columns */
 }
 
-.four-quarter {
-    grid-column: 4 / 5; /* 1 column */
-}
-
 .one-quarter {
     grid-column: 1 / 2; /* 1 column from left */
-}
-
-.two-quarter {
-    grid-column: 2 / 3;
-}
-
-.three-quarter {
-    grid-column: 3 / 4;
 }
 
 .first-half {
